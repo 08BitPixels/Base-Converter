@@ -1,27 +1,35 @@
 @font-face {
+
 	font-family: Century Gothic Font;
 	src: url('fonts/Century Gothic.ttf');
+
 }
 
 body {
+
 	font-size: 30px;
 	color: #ffffff;
 	font-family: Century Gothic Font;
 	background-color: #12141f;
 	text-align: center;
+
 }
 
 h2 {
+
 	font-size: 30px;
 	margin: 10px;
+
 }
 
 h1 {
+
 	padding: 10px;
 	background-color: #004b05;
 	border-radius: 10px;
 	width: 14ch;
 	margin: auto;
+	
 }
 
 .convertButton {
