@@ -1,0 +1,88 @@
+@font-face {
+	font-family: Century Gothic Font;
+	src: url('fonts/Century Gothic.ttf');
+}
+
+body {
+	font-size: 30px;
+	color: #ffffff;
+	font-family: Century Gothic Font;
+	background-color: #12141f;
+	text-align: center;
+}
+
+h2 {
+	font-size: 30px;
+	margin: 10px;
+}
+
+h1 {
+	padding: 10px;
+	background-color: #004b05;
+	border-radius: 10px;
+	width: 14ch;
+	margin: auto;
+}
+
+.convertButton {
+
+	font-size: 50px;
+	color: #b6ffbb;
+	background-color: #004b05;
+	border-radius: 10px;
+	border-width: 0px;
+	padding: 15px;
+	margin: 20px;
+
+}
+
+.convertButton :hover {
+
+	transition: 
+		padding 0.2s,
+		background-color 0.2s
+	;
+	background-color: #00ff11;
+	border-radius: 7.5px;
+	padding: 20px;
+
+}
+
+.convertButton :active {
+
+	transition: 
+		padding 0.2s,
+		background-color 0.2s
+	;
+	background-color: #b6ffbb;
+	border-radius: 7.50px;
+	padding: 15px;
+
+}
+
+.inputField {
+
+	font-size: 30px;
+	font-family: Century Gothic Font;
+	color: #808080;
+	background-color: #282a36;
+	border-radius: 5px;
+	border-width: 0px;
+	padding: 7.5px;
+	width: 25ch;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.resultField {
+
+	font-size: 30px;
+	color: #b6ffbb;
+	background-color: #333540;
+	border-radius: 5px;
+	border-width: 0px;
+	padding: 7.5px;
+	width: 50ch;
+	margin: auto;
+
+}

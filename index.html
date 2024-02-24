@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+		<script src = 'script.js'></script>
+		<link href = 'style.css', rel = 'stylesheet'></style>
+		<title> Base Converter </title>
+
+	</head>
+	<body>
+
+		<h1> Base Converter </h1>
+
+		<h2> Input </h2>
+		<input class = 'inputField', id = 'inputInteger', placeholder = 'Integer'>
+		<input class = 'inputField', id = 'inputIntegerBase', placeholder = 'In Base'>
+		
+		<br>
+		
+		<h2> To Base </h2>
+		<input class = 'inputField', id = 'outputIntegerBase', placeholder = 'Base'>
+		<br>
+		<button
+
+			class = 'convertButton', 
+			onclick = 'base2base(
+
+				inputIntegerString = document.getElementById("inputInteger").value, 
+				inputBaseString = document.getElementById("inputIntegerBase").value,
+				outputBaseString = document.getElementById("outputIntegerBase").value
+
+			)'
+
+		> 
+		<b> Convert </b> 
+		</button>
+
+		<br>
+		<h2> Output </h2>
+		<p class = 'resultField', id = 'resultField1'> ... </p>
+
+	</body>
+</html>
