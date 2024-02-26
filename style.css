@@ -8,7 +8,7 @@
 body {
 
 	font-size: 30px;
-	color: #ffffff;
+	color: #dddddd;
 	font-family: Century Gothic Font;
 	background-color: #12141f;
 	text-align: center;
@@ -34,6 +34,7 @@ h1 {
 
 .convertButton {
 
+	font-family: Century Gothic Font;
 	font-size: 50px;
 	color: #00ff11;
 	background-color: #004b05;
@@ -97,6 +98,18 @@ h1 {
 
 }
 
-div {
-	display: inline-block;
+.copyToClipboard{
+
+	font-size: 30px;
+	color: #000000;
+	font-family: Century Gothic Font;
+	background-color: #004b05;
+	height: 50px;
+	border-radius: 5px;
+	border-width: 0px;
+	padding: 10px;
+	width: 21ch;
+	margin: auto;
+	margin-top: 10px;
+	
 }

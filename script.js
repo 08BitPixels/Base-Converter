@@ -20,10 +20,5 @@ function baseToBase(inputIntegerString, inputIntegerBaseString, outputBaseString
 }
 
 function copyToClipboard(element) {
-
-  element.select();
-  element.setSelectionRange(0, 99999);
-	
   navigator.clipboard.writeText(element.innerHTML);
-	
 }
