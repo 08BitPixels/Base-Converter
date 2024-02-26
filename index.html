@@ -19,12 +19,12 @@
 		<br>
 		
 		<h2> To Base </h2>
-		<input class = 'inputField', id = 'outputIntegerBase', placeholder = 'Base'>
+		<input class = 'inputField', id = 'outputIntegerBase', placeholder = 'To Base'>
 		<br>
 		<button
 
 			class = 'convertButton', 
-			onclick = 'base2base(
+			onclick = 'baseToBase(
 
 				inputIntegerString = document.getElementById("inputInteger").value, 
 				inputIntegerBaseString = document.getElementById("inputIntegerBase").value,
@@ -38,7 +38,8 @@
 
 		<br>
 		<h2> Output </h2>
-		<p class = 'resultField', id = 'resultField1'> ... </p>
+		<div> <p class = 'resultField', id = 'resultField1'> ... </p> </div>
+		<div> <button onclick = 'copyToClipboard(document.getElementById("resultField1"))'> Copy To Clipboard </button> </div>
 
 	</body>
 </html>

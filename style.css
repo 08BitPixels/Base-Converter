@@ -35,7 +35,7 @@ h1 {
 .convertButton {
 
 	font-size: 50px;
-	color: #b6ffbb;
+	color: #00ff11;
 	background-color: #004b05;
 	border-radius: 10px;
 	border-width: 0px;
@@ -47,9 +47,11 @@ h1 {
 .convertButton :hover {
 
 	transition: 
+		color 0.2s,
 		padding 0.2s,
 		background-color 0.2s
 	;
+	color: #004b05;
 	background-color: #00ff11;
 	border-radius: 7.5px;
 	padding: 20px;
@@ -62,7 +64,7 @@ h1 {
 		padding 0.2s,
 		background-color 0.2s
 	;
-	background-color: #b6ffbb;
+	background-color: #004b05;
 	border-radius: 7.50px;
 	padding: 15px;
 
@@ -85,7 +87,7 @@ h1 {
 .resultField {
 
 	font-size: 30px;
-	color: #b6ffbb;
+	color: #00ff11;
 	background-color: #333540;
 	border-radius: 5px;
 	border-width: 0px;
@@ -93,4 +95,8 @@ h1 {
 	width: 50ch;
 	margin: auto;
 
+}
+
+div {
+	display: inline-block;
 }
