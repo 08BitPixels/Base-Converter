@@ -49,25 +49,22 @@ h1 {
 
 	transition: 
 		color 0.2s,
-		padding 0.2s,
 		background-color 0.2s
 	;
 	color: #004b05;
 	background-color: #00ff11;
-	border-radius: 7.5px;
-	padding: 20px;
+	padding: 15px;
+	border-radius: 10px;
 
 }
 
 .convertButton :active {
 
 	transition: 
-		padding 0.2s,
 		background-color 0.2s
 	;
 	background-color: #004b05;
-	border-radius: 7.50px;
-	padding: 15px;
+	border-radius: 7.5px;
 
 }
 
@@ -93,12 +90,12 @@ h1 {
 	border-radius: 5px;
 	border-width: 0px;
 	padding: 7.5px;
-	width: 50ch;
+	width: fit-content;
 	margin: auto;
 
 }
 
-.copyToClipboard{
+.copyToClipboard {
 
 	font-size: 30px;
 	color: #000000;
@@ -107,9 +104,40 @@ h1 {
 	height: 50px;
 	border-radius: 5px;
 	border-width: 0px;
-	padding: 10px;
-	width: 21ch;
+	width: 20ch;
 	margin: auto;
 	margin-top: 10px;
+	
+}
+
+.copyToClipboard :hover {
+
+	transition: color 0.2s;
+	color: #dddddd;
+	
+}
+
+.copyToClipboard :mouseou {
+
+	transition: color 0.2s;
+	color: #dddddd;
+	
+}
+
+.copyToClipboardIcon {
+
+	position: relative;
+	bottom: -3.5px;
+	
+}
+
+.content {
+
+	background-color: #0e0e16;
+	width: 50%;
+	margin: auto;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 10px;
 	
 }

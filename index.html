@@ -12,46 +12,50 @@
 
 		<h1> Base Converter </h1>
 
-		<h2> Input </h2>
-		<input class = 'inputField', id = 'inputInteger', placeholder = 'Integer'>
-		<input class = 'inputField', id = 'inputIntegerBase', placeholder = 'In Base'>
-		
-		<br>
-		
-		<h2> To Base </h2>
-		<input class = 'inputField', id = 'outputIntegerBase', placeholder = 'To Base'>
-		<br>
-		<button
-
-			class = 'convertButton', 
-			onclick = 'baseToBase(
-
-				inputIntegerString = document.getElementById("inputInteger").value, 
-				inputIntegerBaseString = document.getElementById("inputIntegerBase").value,
-				outputBaseString = document.getElementById("outputIntegerBase").value
-
-			)'
-
-		> 
-		<b> Convert </b> 
-		</button>
-
-		<br>
-		<h2> Output </h2>
-		<p class = 'resultField', id = 'resultField1'> ... </p>
-		<button class = 'copyToClipboard', onclick = 'copyToClipboard(document.getElementById("resultField1"))'> 
-
-			<img 
-				
-				src = 'images/index/copy-icon.png',
-				width = '30px',
-				height = '30px'
-				
-			>
+		<div class = 'content'>
 			
-			<b> Copy To Clipboard  </b>
+			<h2> Input </h2>
+			<input class = 'inputField', id = 'inputInteger', placeholder = 'Integer'>
+			<input class = 'inputField', id = 'inputIntegerBase', placeholder = 'In Base'>
 			
-		</button>
+			<br>
+			
+			<h2> To Base </h2>
+			<input class = 'inputField', id = 'outputIntegerBase', placeholder = 'To Base'>
+			<br>
+			<button
+	
+				class = 'convertButton', 
+				onclick = 'baseToBase(
+	
+					inputIntegerString = document.getElementById("inputInteger").value, 
+					inputIntegerBaseString = document.getElementById("inputIntegerBase").value,
+					outputBaseString = document.getElementById("outputIntegerBase").value
+	
+				)'
+	
+			> 
+			<b> Convert </b> 
+			</button>
+	
+			<br>
+			<h2> Output </h2>
+			<p class = 'resultField', id = 'resultField1'> ... </p>
+			<button class = 'copyToClipboard', onclick = 'copyToClipboard(document.getElementById("resultField1"))'> 
+	
+				<img class = 'copyToClipboardIcon'
+					
+					src = 'images/index/copy-icon.png',
+					width = '30px',
+					height = '30px'
+					
+				>
+				
+				<b> Copy To Clipboard  </b>
+				
+			</button>
+
+		</div>
 
 	</body>
 </html>
