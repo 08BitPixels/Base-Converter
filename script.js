@@ -3,6 +3,7 @@ function baseToBase(input, inputBase, outputBase) {
 	if (input == false) {document.getElementById('inputInteger').placeholder = 'REQUIRED'}
 	if (inputBase == false) {document.getElementById('inputIntegerBase').placeholder = 'REQUIRED'}
 	if (outputBase == false) {document.getElementById('outputIntegerBase').placeholder = 'REQUIRED'}
+	
 	if (input && inputBase && outputBase) {
 
 		document.getElementById('inputInteger').placeholder = 'Input';
