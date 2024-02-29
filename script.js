@@ -1,20 +1,24 @@
-function baseToBase(input, inputBase, outputBase) {
+function baseToBase(inputInteger, inputBase, outputBase) {
 
-	if (input == false) {document.getElementById('inputInteger').placeholder = 'REQUIRED'}
-	if (inputBase == false) {document.getElementById('inputIntegerBase').placeholder = 'REQUIRED'}
-	if (outputBase == false) {document.getElementById('outputIntegerBase').placeholder = 'REQUIRED'}
+	let inputIntegerField = document.getElementById('inputIntegerField');
+	let inputBaseField = document.getElementById('inputBaseField');
+	let outputBaseField = document.getElementById('outputBaseField');
 	
-	if (input && inputBase && outputBase) {
+	if (inputInteger == false) {inputIntegerField.placeholder = 'REQUIRED'}
+	if (inputBase == false) {inputBaseField.placeholder = 'REQUIRED'}
+	if (outputBase == false) {outputBaseField.placeholder = 'REQUIRED'}
+	
+	if (inputInteger && inputBase && outputBase) {
 
-		document.getElementById('inputInteger').placeholder = 'Input';
-		document.getElementById('inputIntegerBase').placeholder = 'Input Base';
-		document.getElementById('outputIntegerBase').placeholder = 'To Base';
+		inputIntegerField.placeholder = 'Input';
+		inputBaseField.placeholder = 'Input Base';
+		outputBaseField.placeholder = 'To Base';
 		
-		input = parseInt(input, inputBase);
+		inputInteger = parseInt(inputInteger, inputBase);
 		outputBase = parseInt(outputBase);
-		let output = input.toString(outputBase);
+		let output = inputInteger.toString(outputBase);
 	
-		document.getElementById('resultField1').innerHTML = output;
+		document.getElementById('outputField').innerHTML = output;
 		
 	}
 

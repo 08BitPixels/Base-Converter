@@ -4,58 +4,47 @@
 	<head>
 
 		<title> Base Converter </title>
+
 		<script src = 'script.js'></script>
 		<link href = 'style.css', rel = 'stylesheet'></style>
 
 	</head>
 	<body>
 
-		<h1> Base Converter </h1>
+		<h1 class = 'title'> BASE CONVERTER </h1>
 
 		<div class = 'content'>
 			
-			<h2> Input </h2>
-			<input class = 'inputField', id = 'inputInteger', placeholder = 'Integer'>
-			<input class = 'inputField', id = 'inputIntegerBase', placeholder = 'In Base'>
+			<h2 class = 'subTitle'> Input </h2>
+			<input class = 'inputField', id = 'inputIntegerField', placeholder = 'Number'>
+			<input class = 'inputField', id = 'inputBaseField', placeholder = 'Base'>
 			
 			<br>
 			
-			<h2> To Base </h2>
-			<input class = 'inputField', id = 'outputIntegerBase', placeholder = 'To Base'>
+			<h2 class = 'subTitle'> To Base </h2>
+			<input class = 'inputField', id = 'outputBaseField', placeholder = 'To Base'>
+			
 			<br>
-
+			
 			<button
 	
 				class = 'convertButton', 
 				onclick = 'baseToBase(
 	
-					input = document.getElementById("inputInteger").value, 
-					inputBase = document.getElementById("inputIntegerBase").value,
-					outputBase = document.getElementById("outputIntegerBase").value
+					inputInteger = document.getElementById("inputIntegerField").value, 
+					inputBase = document.getElementById("inputBaseField").value,
+					outputBase = document.getElementById("outputBaseField").value
 	
 				)'
 	
 			> 
-			<b> Convert </b> 
+			<b> CONVERT </b> 
 			</button>
 	
 			<br>
-			<h2> Output </h2>
-			<p class = 'resultField', id = 'resultField1'> ... </p>
-
-			<button class = 'copyToClipboard', onclick = 'copyToClipboard(document.getElementById("resultField1"))'> 
-	
-				<img class = 'copyToClipboardIcon'
-					
-					src = 'images/index/copy-icon.png',
-					width = '30px',
-					height = '30px'
-					
-				>
-				
-				<b> Copy To Clipboard  </b>
-				
-			</button>
+			<h2 class = 'subTitle', id = 'outputTitle'> Output </h2>
+			<p class = 'outputField', id = 'outputField'> ... </p>
+			<button class = 'copyToClipboard', onclick = 'copyToClipboard(document.getElementById("outputField"))'> <b> COPY TO CLIPBOARD  </b> </button>
 
 		</div>
 
