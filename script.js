@@ -11,8 +11,8 @@ function baseToBase(inputInteger, inputBase, outputBase) {
 	if (inputInteger && inputBase && outputBase) {
 
 		inputIntegerField.placeholder = 'Input';
-		inputBaseField.placeholder = 'Input Base';
-		outputBaseField.placeholder = 'To Base';
+		inputBaseField.placeholder = 'Base';
+		outputBaseField.placeholder = 'Base';
 		
 		inputInteger = parseInt(inputInteger, inputBase);
 		outputBase = parseInt(outputBase);
